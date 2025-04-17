@@ -184,6 +184,4 @@ Note: Each notebook is identical in structure but uses different hyperparameters
 - Checkpoint management allows for training to be paused and resumed
 - The evaluation framework allows for fair comparison between different model architectures
 
-## License
 
-The models and dataset used in this project may have their own licenses. Please refer to the respective sources for more information.
