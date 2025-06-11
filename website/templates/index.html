@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Hindi Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="highlight">English to Hindi</span> Translator</h1>
+            <p class="subtitle">Powered by MarianMT Fine-tuned Model</p>
+        </header>
+
+        <div class="translator-container">
+            <div class="language-selector">
+                <div class="language active">English</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="language">Hindi</div>
+            </div>
+            
+            <div class="translation-box">
+                <div class="input-container">
+                    <textarea id="input-text" placeholder="Enter English text here..."></textarea>
+                    <div class="actions">
+                        <button id="clear-btn" class="action-btn"><i class="fas fa-times"></i></button>
+                        <button id="copy-input-btn" class="action-btn"><i class="fas fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="output-container">
+                    <div id="output-text" class="output"></div>
+                    <div class="actions">
+                        <button id="copy-output-btn" class="action-btn"><i class="fas fa-copy"></i></button>
+                        <button id="speak-btn" class="action-btn"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="translate-btn" class="primary-btn">
+                <span class="btn-text">Translate</span>
+                <span class="loading-spinner hidden"></span>
+            </button>
+        </div>
+
+        <div class="features-section">
+            <h2>About This Translator</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-cogs feature-icon"></i>
+                    <h3>Fine-tuned Model</h3>
+                    <p>Custom-trained MarianMT model optimized for English to Hindi translation.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-database feature-icon"></i>
+                    <p>Trained on the IITB English-Hindi Parallel Corpus with extensive hyperparameter tuning.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>High Performance</h3>
+                    <p>Evaluated using BLEU, ROUGE, and METEOR metrics for quality translations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 English-Hindi Translation Model Evaluation Project</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

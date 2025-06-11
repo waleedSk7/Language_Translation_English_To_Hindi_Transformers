@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - English to Hindi Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container error-container">
+        <header>
+            <h1>Oops! Something went wrong</h1>
+        </header>
+        
+        <div class="error-message">
+            <p>{{ error }}</p>
+        </div>
+        
+        <div class="error-actions">
+            <a href="/" class="primary-btn">Go Back to Homepage</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 English-Hindi Translation Model Evaluation Project</p>
+    </footer>
+</body>
+</html>
